@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Image from "next/image";
 
 const Content = () => {
   const [file, setFile] = useState(null);
@@ -88,13 +87,12 @@ const Content = () => {
           </a>
         </div>
         <div className="md:w-1/2 p-4">
-          <Image
-            src={"https://duet-cdn.vox-cdn.com/thumbor/0x0:662x370/750x500/filters:focal(331x185:332x186):no_upscale():format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/11076487/deep_fake_gan_celebrities_nvidia.gif"||"https://images.unsplash.com/photo-1648195699350-fa0ed4a263e7?q=80&w=1775&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+          <img
+            src="https://duet-cdn.vox-cdn.com/thumbor/0x0:662x370/750x500/filters:focal(331x185:332x186):no_upscale():format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/11076487/deep_fake_gan_celebrities_nvidia.gif"
             alt="Description of image"
             width={720}
             height={360}
             layout="responsive"
-            objectFit="cover"
           />
         </div>
       </section>
