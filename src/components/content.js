@@ -89,7 +89,7 @@ const Content = () => {
         </div>
         <div className="md:w-1/2 p-4">
           <Image
-            src="https://duet-cdn.vox-cdn.com/thumbor/0x0:662x370/750x500/filters:focal(331x185:332x186):no_upscale():format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/11076487/deep_fake_gan_celebrities_nvidia.gif" 
+            src={"https://duet-cdn.vox-cdn.com/thumbor/0x0:662x370/750x500/filters:focal(331x185:332x186):no_upscale():format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/11076487/deep_fake_gan_celebrities_nvidia.gif"||"https://images.unsplash.com/photo-1648195699350-fa0ed4a263e7?q=80&w=1775&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
             alt="Description of image"
             width={720}
             height={360}
@@ -137,16 +137,31 @@ const Content = () => {
       {/* About Section */}
       <section id="about" className="p-4">
         <div className="text-center md:text-left p-4">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">About Us</h2>
-          <p className="text-gray-600">{/* Add your about content here */}</p>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">About Us</h2>
+          <p className="font-light">
+            Deepverify is the result of our passion for unmasking truth in a world filled with
+            illusions. Our cutting-edge technology is designed to analyze images and videos,
+            distinguishing between genuine and deepfake content. We believe in empowering you with
+            the clarity to trust what you see, safeguarding your reality with Deepverify.
+          </p> 
+          <h2 className="text-xl py-5 font-bold"> Our Origin Story</h2>
+          <p className="font-light">
+            Deepverify was born out of a vision to combat the rising threat of deepfake technology.
+            We started this project during a hackathon, fueled by the desire to contribute to a
+            safer digital environment. The challenge inspired us to create a tool that goes beyond
+            conventional means, providing an innovative solution to a pressing problem.
+          </p>
         </div>
       </section>
 
       {/* Contact Us Section */}
-      <section id="contact" className="bg-gray-100 p-4">
+      <section id="contact" className="p-4">
         <div className="text-center md:text-left p-4">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Contact Us</h2>
-          <p className="text-gray-600">{/* Add your contact information here */}</p>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">Contact Us</h2>
+
+          <p className="text-gray-600">
+            
+          </p>
         </div>
       </section>
     </main>
